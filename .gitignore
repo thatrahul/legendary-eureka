@@ -1,0 +1,24 @@
+# ignore maven and intellij generated files/directories
+.idea/
+*.iml
+target/
+.classpath
+.project
+.settings/
+.DS_Store/
+*.log
+*.swp
+
+# Following manage the crafter overlay
+# ingnore crafter generated versions
+versions/
+# ignore all content
+**/wem-projects/**/*.xml
+# except the home page for every site
+!**/website/index.xml
+
+# Ignore testResults
+**/FitNesseRoot/files/testResults/
+
+# Ignore groovy classes copied by build process
+**/wem-projects/*/*/work-area/classes/
